@@ -4,9 +4,28 @@
 
 **Note:** This project is no longer maintained, and you may encounter issues while using it. For this reason, the mobile part of the project has been removed from the Docker build.
 
+## Available Services
+
+Area integrates with a wide range of services to allow for maximum flexibility in automations:
+
+- **Spotify**
+- **Twitter**
+- **Notion**
+- **Discord**
+- **Google Mail**
+- **Microsoft Outlook**
+- **GitHub**
+- **Facebook**
+- **LinkedIn**
+- **Twitch**
+- **Riot Games**
+- **CoinGecko**
+
+
 ## Technologies
 
 - **Web Frontend**: [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/)
+- **Mobile Frontend**: [Flutter](https://flutter.dev/)
 - **Backend**: [Nest.js](https://nestjs.com/) + TypeScript
 - **Database**: MongoDB
 
@@ -29,10 +48,10 @@ cd area
 2.	Run the application using Docker Compose:
 
 ```bash
-docker compose up --build
+docker compose up --build # Or docker-compose up --build
 ```
 
 ## Development Team
 
-| [<img src="https://github.com/yorennz.png?size=85" width=85><br>Yorennz ZELINA](https://github.com/yorennz)<br><sub>Web Application</sub> | [<img src="https://github.com/BRENNS.png?size=85" width=85><br>Steven DONG](https://github.com/BRENNS)<br><sub>Web Application</sub> | [<img src="https://github.com/Abbey.png?size=85" width=85><br>David LIN](https://github.com/Abbey)<br><sub>Mobile Application</sub> | [<img src="https://github.com/Jouzep.png?size=85" width=85><br>Joseph YU](https://github.com/Jouzep)<br><sub>Web Application</sub> |
+| [<img src="https://github.com/yorennz.png?size=85" width=85><br>Yorennz ZELINA](https://github.com/yorennz)<br><sub>Web Frontend</sub> | [<img src="https://github.com/BRENNS.png?size=85" width=85><br>Steven DONG](https://github.com/BRENNS)<br><sub>Web Frontend</sub> | [<img src="https://github.com/Abbey.png?size=85" width=85><br>David LIN](https://github.com/Abbey)<br><sub>Mobile Frontend</sub> | [<img src="https://github.com/Jouzep.png?size=85" width=85><br>Joseph YU](https://github.com/Jouzep)<br><sub>Backend</sub> |
 | :---: | :---: | :---: | :---: |
