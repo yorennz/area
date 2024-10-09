@@ -26,8 +26,8 @@ Area integrates with a wide range of services to allow for maximum flexibility i
 
 - **Web Frontend**: [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/)
 - **Mobile Frontend**: [Flutter](https://flutter.dev/)
-- **Backend**: [Nest.js](https://nestjs.com/) + TypeScript
-- **Database**: MongoDB
+- **Backend**: [Nest.js](https://nestjs.com/) + [TypeScript](https://www.typescriptlang.org/)
+- **Database**: [MongoDB](https://www.mongodb.com/)
 
 ## Installation
 
