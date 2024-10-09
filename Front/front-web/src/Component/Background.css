@@ -1,0 +1,70 @@
+/* Styles communs pour toutes les ellipses */
+.screen {
+    position: absolute;
+    width: 100%; /* Utilisez 100vw pour que le conteneur occupe toute la largeur de la fenêtre */
+    height: 100%; /* Utilisez 100vh pour que le conteneur occupe toute la hauteur de la fenêtre */
+    overflow: hidden;
+}
+
+.sidebar-background {
+    position: absolute;
+    width: 100%;
+    height: 100%; /* Hauteur de la barre latérale */
+    overflow: hidden;
+}
+
+/* Ellipse 5 */
+.ellipse5 {
+    position: absolute;
+    width: 58.18vw; /* (1144.05px / largeur de la fenêtre) * 100 */
+    height: 340.55vh; /* (684px / hauteur de la fenêtre) * 100 */
+    left: 24.05vw; /* (476.04px / largeur de la fenêtre) * 100 */
+    top: 17.9vh; /* (443px / hauteur de la fenêtre) * 100 */
+    filter: blur(6.31vw); /* (125px / largeur de la fenêtre) * 100 */
+    z-index: -1;
+}
+
+/* Ellipse 1 */
+.ellipse1 {
+    position: absolute;
+    width: 80.32vw; /* (1214.58px / largeur de la fenêtre) * 100 */
+    height: 330.79vh; /* (669px / hauteur de la fenêtre) * 100 */
+    left: 28.79vw; /* (570.07px / largeur de la fenêtre) * 100 */
+    top: -10.2vh; /* (-202px / hauteur de la fenêtre) * 100 */
+    filter: blur(5.05vw); /* (100px / largeur de la fenêtre) * 100 */
+    z-index: -1;
+}
+
+/* Ellipse 4 */
+.ellipse4 {
+    position: absolute;
+    width: 67.88vw; /* (1343.66px / largeur de la fenêtre) * 100 */
+    height: 390.6vh; /* (784px / hauteur de la fenêtre) * 100 */
+    left: -16.65vw; /* (-329.62px / largeur de la fenêtre) * 100 */
+    top: 16.48vh; /* (327px / hauteur de la fenêtre) * 100 */
+    filter: blur(6.31vw); /* (125px / largeur de la fenêtre) * 100 */
+    z-index: -1;
+}
+
+/* Ellipse 3 */
+.ellipse3 {
+    position: absolute;
+    width: 70.43vw; /* (1394.8px / largeur de la fenêtre) * 100 */
+    height: 380.18vh; /* (754px / hauteur de la fenêtre) * 100 */
+    right: 27.58vw; /* (545.92px / largeur de la fenêtre) * 100 */
+    top: -13.05vh; /* (-249.14px / hauteur de la fenêtre) * 100 */
+    filter: blur(5.05vw); /* (100px / largeur de la fenêtre) * 100 */
+    z-index: -1;
+}
+
+/* Ellipse 6 */
+.ellipse6 {
+    position: absolute;
+    width: 34.86vw; /* (689.57px / largeur de la fenêtre) * 100 */
+    height: 240.29vh; /* (457px / hauteur de la fenêtre) * 100 */
+    left: 84.79vw; /* (1687.67px / largeur de la fenêtre) * 100 */
+    top: 14.91vh; /* (299px / hauteur de la fenêtre) * 100 */
+    filter: blur(6.31vw); /* (125px / largeur de la fenêtre) * 100 */
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    z-index: -1;
+}

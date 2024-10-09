@@ -1,0 +1,72 @@
+services:
+  database:
+    container_name: area_mongodb
+    image: mongo:latest
+    volumes:
+      - areaDB:/areaData/db
+    ports:
+      - 27017:27017
+    restart: always
+    networks:
+      - areaNetwork
+
+  server:
+    container_name: back_end_web
+    build:
+      context: Server/area-api/
+      dockerfile: main.Dockerfile
+    ports:
+      - 8080:8080
+    environment:
+      - PORT=8080
+      - DB_URI=mongodb://area_mongodb:27017
+      - DB_NAME=area_db
+      - NAME=admin
+    depends_on:
+      - database
+    networks:
+      - areaNetwork
+
+  #  client-mobile:
+  #    container_name: front_end_mobile
+  #    build: Front/front_mobile/.
+  #    volumes:
+  #      - frontendVol:/usr/src/apk
+
+  client-web:
+    container_name: front_end_web
+    build: Front/front-web/.
+    ports:
+      - 8081:3000
+    depends_on:
+      - server
+    volumes:
+      - frontendVol:/usr/src/apk
+    networks:
+      - areaNetwork
+
+  backend-area:
+    container_name: back_end_trigger
+    build:
+      context: Server/area-api/
+      dockerfile: trigger.Dockerfile
+    ports:
+      - 8000:8000
+    environment:
+      - PORT=8000
+      - DB_URI=mongodb://area_mongodb:27017
+      - DB_NAME=area_db
+      - NAME=admin
+    depends_on:
+      - database
+      - server
+    networks:
+      - areaNetwork
+
+volumes:
+  areaDB:
+  frontendVol:
+
+networks:
+  areaNetwork:
+    driver: bridge

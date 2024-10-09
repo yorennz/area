@@ -1,0 +1,30 @@
+.home_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    font-family: 'gg sans bold';
+    top: 0;
+    background-color: red;
+    justify-content: space-between;
+    animation: all .5s;
+}
+
+.navbar__right {
+    display: flex;
+    flex-direction: row;
+}
+
+/* ul {
+    list-style-type: none;
+} */
+
+.home {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: aqua; */
+}

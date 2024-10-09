@@ -1,0 +1,69 @@
+.user_container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user_card {
+  margin: 2% 0% 0% 3%;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.key_text {
+  color: var(--purple-bg-color3);
+}
+
+.value_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.2 ease-in-out;
+  z-index: 2;
+}
+
+.update_value_text {
+  display: inline-block;
+  opacity: 0;
+}
+
+.emptyValue {
+  color: var(--purple-bg-color2);
+  font-weight: lighter;
+}
+
+.notEmptyValue {
+  color: var(--purple-font-color);
+}
+
+.delete_button {
+  margin: 2% 0% 2% 3%;
+  width: 200px;
+  background-color: #630a25;
+}
+
+.user_input {
+  font-family: "gg sans semibold";
+  color: var(--purple-font-color);
+  height: 50px;
+  width: 400px;
+  border-bottom: 1px solid #515151;
+  font-size: 25px;
+  background-color: var(--white-bg-color);
+  box-shadow: 15px;
+  transition: all 1.2s;
+}
+
+.save_button {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .user_container {
+    height: 100%;
+    width: 100vw;
+  }
+}

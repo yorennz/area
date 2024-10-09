@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "gg sans";
+  src: url("../public/font/ggsans-Normal.woff2") format("woff2"),
+    url("../public/font/ggsans-Normal.woff") format("woff");
+}
+
+@font-face {
+  font-family: "gg sans bold";
+  src: url("../public/font/ggsans-Bold.woff2") format("woff2"),
+    url("../public/font/ggsans-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "gg sans semibold";
+  src: url("../public/font/ggsans-Semibold.woff2") format("woff2"),
+    url("../public/font/ggsans-Semibold.woff") format("woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+}
+
+body {
+  margin: 0;
+  font-family: "gg sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --white-bg-color: #fae3e3;
+  --white-bg-color2: #f7d4bc;
+
+  --purple-bg-color: #c39dd4;
+  --purple-bg-color2: #b993c3;
+  --purple-bg-color3: #cfa5b4;
+
+  --purple-button-color: #846b8a;
+  --purple-font-color: #60366b;
+
+  --grey-bg-color: #d9d9d9;
+
+  --area-font: "gg sans";
+  --area-font-bold: "gg sans bold";
+  --area-font-semibold: "gg sans semibold";
+}
+
+button {
+  cursor: pointer;
+}

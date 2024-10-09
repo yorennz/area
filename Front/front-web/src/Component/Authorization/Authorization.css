@@ -1,0 +1,145 @@
+.Authorization_container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Authorization_card_container {
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.Authorization_card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border: 0;
+  border-radius: 15px;
+  height: 200px;
+  width: 200px;
+  min-height: 200px;
+  min-width: 200px;
+  background-color: var(--purple-bg-color2);
+  box-shadow: 10px 5px 5px pink;
+  margin: 1% 0 0 2%;
+  transition: all 0.2s;
+}
+
+.Authorization_card:hover {
+  transform: scale(1.07);
+}
+
+.card_title {
+  font-size: 17px;
+  color: var(--white-bg-color);
+  font-weight: normal;
+}
+
+.services_search_bar {
+  border-radius: 75px;
+  height: 60px;
+  width: 80%;
+  background-color: var(--purple-font-color);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.serviceLogo {
+  width: 35px;
+  height: 35px;
+  margin: 0 0 0 15px;
+  transition: 0.2s;
+}
+
+.serviceLogo:hover {
+  transform: scale(0.9);
+}
+
+.switch {
+  position: relative;
+  height: 1.5rem;
+  width: 3rem;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 9999px;
+  background-color: rgba(100, 116, 139, 0.377);
+  transition: all 0.3s ease;
+}
+
+.switch:checked {
+  background-color: rgba(195, 157, 212, 1);
+}
+
+.switch::before {
+  position: absolute;
+  content: "";
+  left: calc(1.5rem - 1.6rem);
+  top: calc(1.5rem - 1.6rem);
+  display: block;
+  height: 1.6rem;
+  width: 1.6rem;
+  cursor: pointer;
+  border: 1px solid rgba(100, 116, 139, 0.527);
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 3px 10px rgba(100, 116, 139, 0.327);
+  transition: all 0.3s ease;
+}
+
+.switch:hover::before {
+  box-shadow: 0 0 0px 8px rgba(0, 0, 0, 0.15);
+}
+
+.switch:checked:hover::before {
+  box-shadow: 0 0 0px 8px rgba(195, 157, 212, 0.15);
+}
+
+.switch:checked:before {
+  transform: translateX(100%);
+  border-color: rgba(195, 157, 212, 1);
+}
+
+.Auth_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-left: 10%;
+}
+
+.card_button {
+  display: flex;
+  flex: row;
+  align-items: center;
+}
+
+.card_image {
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+  .services_search_bar {
+    overflow: auto;
+  }
+  .Authorization_card {
+    width: 120px;
+    height: 120px;
+    min-height: 120px;
+    min-width: 120px;
+  }
+  .card_image {
+    width: 40px;
+    height: 40px;
+  }
+}

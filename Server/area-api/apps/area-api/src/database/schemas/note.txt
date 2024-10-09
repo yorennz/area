@@ -1,0 +1,35 @@
+
+Area: {
+    host: "
+    "Service_Token": {
+        "discord":"token,
+        "twitter":"token,
+        "google":"token,
+    }
+    "Areas": [
+        {
+           singleAreaId(1),
+           singleAreaId(2),
+        },
+    ]
+}
+
+SingleArea: {
+    _id:id(singleAreaId)
+    AreaId: "ID",
+    state:"True",
+    Action: {
+        service:"discord",
+        type:"1",
+        data : {
+            ...,
+        },
+    },
+    Reaction: {
+        service:"discord",
+        type:"1",
+        data : {
+            ...,
+        }, 
+    }
+}

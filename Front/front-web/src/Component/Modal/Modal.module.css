@@ -1,0 +1,27 @@
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    position: absolute;
+    animation: all 3s;
+}
+
+.modalContainer {
+    position: absolute;
+    width: 100vw; /* Ajustez la largeur pour couvrir l'écran */
+    height: 100vh; /* Ajustez la hauteur pour couvrir l'écran */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.modalCard {
+    position: fixed;
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    z-index: 10;
+}
