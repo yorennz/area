@@ -1,6 +1,6 @@
 # Area - Automate Your Workflows
 
-**Area** is a project that aims to create a platform similar to Zapier, allowing users to combine various services through triggers and actions. We developed it as a four-person collaboration **October 2023**.
+**Area** is a project that aims to create a platform similar to Zapier, allowing users to combine various services through triggers and actions. We developed it as a four-person collaboration in **October 2023**.
 
 **Note:** This project is no longer maintained, and you may encounter issues while using it. For this reason, the mobile part of the project has been removed from the Docker build.
 
